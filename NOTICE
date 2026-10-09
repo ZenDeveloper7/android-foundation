@@ -1,0 +1,5 @@
+Android Foundation: original starter code, copyright 2026 ZenDeveloper7.
+Gradle wrapper scripts and binary are distributed by Gradle under Apache License 2.0.
+Wrapper bootstrap files were taken from the reviewed Quick Search checkout; no Quick Search
+application source was copied. Its application-specific features are not part of this project.
+See https://github.com/gradle/gradle/blob/master/LICENSE and gradle/wrapper/gradle-wrapper.properties.

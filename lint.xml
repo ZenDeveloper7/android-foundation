@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Dependency drift is handled by reviewed Dependabot PRs, rather than making an
+         otherwise unchanged build fail whenever Maven publishes another release.
+         Compatibility, security, deprecated API and all source/resource checks remain enabled. -->
+    <issue id="AndroidGradlePluginVersion,GradleDependency,NewerVersionAvailable" severity="ignore" />
+</lint>

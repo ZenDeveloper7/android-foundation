@@ -1,0 +1,16 @@
+<resources>
+    <string name="tasks_title">Tasks</string>
+    <string name="task_title_label">New task</string>
+    <string name="add_task">Add task</string>
+    <string name="delete_task_named">Delete %1$s</string>
+    <string name="delete_task">Delete</string>
+    <string name="delete_confirmation">Delete “%1$s”?</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="loading">Loading tasks</string>
+    <string name="empty_tasks">No tasks yet. Add your first task above.</string>
+    <string name="load_error">Tasks could not be loaded.</string>
+    <string name="write_error">Your change could not be saved. Please try again.</string>
+    <string name="about_foundation">About</string>
+</resources>

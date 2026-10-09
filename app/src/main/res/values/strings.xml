@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Foundation</string>
+    <string name="about_description">A small Android starter with tested architecture and executable coding standards.</string>
+    <string name="back">Back</string>
+</resources>
