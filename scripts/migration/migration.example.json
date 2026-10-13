@@ -1,0 +1,59 @@
+{
+  "_comment": "Copy next to the project (outside src), edit, and pass with --config. Regexes are Python.",
+  "repo": "../my-app",
+  "base_package": "com.example.app",
+  "source_module": "app",
+  "source_root": "app/src/main/java",
+  "plugin_prefix": "example",
+
+  "module_levels": {
+    "core:common": 0,
+    "core:model": 0,
+    "core:designsystem": 1,
+    "core:network": 1,
+    "core:data": 2,
+    "core:navigation": 3,
+    "core:ui": 4,
+    "feature:auth": 5,
+    "feature:home": 5,
+    "feature:settings": 5,
+    "app": 6
+  },
+  "shared_module": "core:ui",
+
+  "anchors": [
+    ["^MainActivity\\.kt$|^App(lication)?\\.kt$", "app"],
+    ["^(ui/theme|ui/components?|designsystem)/", "core:designsystem"],
+    ["^(network|api)/", "core:network"],
+    ["(^|/)(data|repository|remote|local)/", "core:data"],
+    ["^(util|common|domain)/", "core:common"],
+    ["^navigation/", "core:navigation"],
+    ["^(feature/)?auth/", "feature:auth"],
+    ["^(feature/)?home/", "feature:home"],
+    ["^(feature/)?settings/", "feature:settings"]
+  ],
+  "overrides": {
+    "navigation/AppNavHost.kt": "app"
+  },
+
+  "feature_implicit_deps": ["core:common", "core:data", "core:designsystem", "core:model"],
+  "library_imports": [
+    ["^import androidx\\.compose\\.material3\\.", "libs.androidx.compose.material3"],
+    ["^import androidx\\.compose\\.ui\\.", "libs.androidx.compose.ui"],
+    ["^import retrofit2\\.", "libs.retrofit"],
+    ["^import okhttp3\\.", "libs.okhttp"],
+    ["^import kotlinx\\.serialization\\.", "libs.kotlinx.serialization.json"],
+    ["^import kotlinx\\.coroutines\\.", "libs.kotlinx.coroutines.android"]
+  ],
+
+  "resource_module": "core:designsystem",
+  "keep_resource_dirs": "^(mipmap.*|xml)$",
+  "keep_resource_files": "^(themes.*|ic_launcher_background)\\.xml$",
+
+  "package_rules": [
+    {"module": "^core:(\\w+)$", "pattern": "^com\\.example\\.app\\.(?:util|common|domain)(\\..+)?$", "replace": "com.example.app.core.common\\1"},
+    {"module": "^core:designsystem$", "pattern": "^com\\.example\\.app\\.ui(\\..+)?$", "replace": "com.example.app.core.designsystem\\1"},
+    {"module": "^feature:(\\w+)$", "pattern": "^com\\.example\\.app\\.(?:feature\\.)?\\w+(\\..+)?$", "replace": "com.example.app.feature.{module_name}\\1"},
+    {"module": "^core:(\\w+)$", "pattern": "^com\\.example\\.app\\.\\w+(\\..+)?$", "replace": "com.example.app.core.{module_name}\\1"}
+  ]
+}

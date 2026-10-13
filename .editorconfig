@@ -1,0 +1,24 @@
+# Formatting is enforced by `./gradlew spotlessCheck` (ktlint + Compose rules); fix with spotlessApply.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{kt,kts}]
+# Closest ktlint style to the Android Kotlin style guide (https://developer.android.com/kotlin/style-guide).
+ktlint_code_style = android_studio
+max_line_length = 100
+ktlint_function_naming_ignore_when_annotated_with = Composable
+# Compose rules (https://mrmans0n.github.io/compose-rules/): allow the design system's own locals.
+compose_allowed_composition_locals = LocalSpacing
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{yml,yaml,toml,json}]
+indent_size = 2

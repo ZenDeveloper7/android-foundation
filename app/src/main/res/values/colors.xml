@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window and launcher colors only. UI colors live in :core:designsystem. -->
+    <color name="window_background">#FFFAFDFB</color>
+    <color name="ic_launcher_background">#FF006A60</color>
+</resources>

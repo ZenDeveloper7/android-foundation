@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Every module runs lint with warningsAsErrors. Do not disable checks to get a build green; fix
+    the code or suppress one occurrence with a comment explaining why.
+    Version-freshness checks are informational because Dependabot tracks updates; otherwise every
+    upstream release would break the build.
+-->
+<lint>
+    <issue id="AndroidGradlePluginVersion" severity="informational" />
+    <issue id="GradleDependency" severity="informational" />
+    <issue id="NewerVersionAvailable" severity="informational" />
+    <issue id="ObsoleteLintCustomCheck" severity="informational" />
+    <issue id="OldTargetApi" severity="informational" />
+</lint>

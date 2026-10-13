@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_notes_title">Notes</string>
+    <string name="feature_notes_new_note">New note</string>
+    <string name="feature_notes_edit_note">Edit note</string>
+    <string name="feature_notes_untitled">Untitled</string>
+    <string name="feature_notes_empty_title">No notes yet</string>
+    <string name="feature_notes_empty_message">Tap New note to write your first one.</string>
+    <string name="feature_notes_field_title">Title</string>
+    <string name="feature_notes_field_body">Note</string>
+    <string name="feature_notes_save">Save</string>
+    <string name="feature_notes_back">Back</string>
+    <string name="feature_notes_delete_note">Delete note</string>
+    <string name="feature_notes_delete">Delete</string>
+    <string name="feature_notes_delete_confirm_title">Delete this note?</string>
+    <string name="feature_notes_delete_confirm_text">This can\'t be undone.</string>
+    <string name="feature_notes_discard">Discard</string>
+    <string name="feature_notes_discard_title">Discard changes?</string>
+    <string name="feature_notes_discard_text">Your changes to this note haven\'t been saved.</string>
+    <string name="feature_notes_error_save">Couldn\'t save the note. Try again.</string>
+    <string name="feature_notes_error_delete">Couldn\'t delete the note. Try again.</string>
+    <string name="feature_notes_missing_title">Note not found</string>
+    <string name="feature_notes_missing_message">It may have been deleted.</string>
+    <string name="feature_notes_error_load_title">Couldn\'t load notes</string>
+    <string name="feature_notes_error_load_message">Something went wrong reading your notes.</string>
+    <string name="feature_notes_retry">Retry</string>
+</resources>

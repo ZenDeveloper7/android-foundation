@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    HTTPS only, system CAs only. If an app truly needs cleartext (for example a LAN device), add a
+    narrowly scoped <domain-config> for that host; never enable cleartext in base-config.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <!-- Debug builds also trust user-installed CAs so traffic can be inspected with a proxy. -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
