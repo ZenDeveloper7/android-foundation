@@ -7,7 +7,7 @@ compileSdk = "37"
 targetSdk = "37"
 minSdk = "26"
 
-agp = "9.4.1"
+agp = "9.5.0"
 kotlin = "2.4.21"
 ksp = "2.3.12"
 
@@ -30,7 +30,7 @@ composeBom = "2026.09.00"
 hilt = "2.60.1"
 kotlinxCoroutines = "1.11.0"
 kotlinxSerialization = "1.11.0"
-okhttp = "5.5.0"
+okhttp = "5.5.1"
 retrofit = "3.0.0"
 
 junit4 = "4.13.2"
@@ -38,7 +38,7 @@ robolectric = "4.17"
 truth = "1.4.5"
 turbine = "1.2.1"
 
-spotless = "8.10.3"
+spotless = "8.10.4"
 ktlint = "1.8.0"
 composeRules = "0.6.7"
 
